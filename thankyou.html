@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="/images/illustration-thank-you.svg" class="thankyouimg" alt="Thank You Illustration"/>
+        <img src="images/illustration-thank-you.svg" class="thankyouimg" alt="Thank You Illustration"/>
         <p class="ratingtxt">You selected n out of 5</p>
         <h2 style="text-align: center;">Thank You!</h2>
         <p style="text-align: center;">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
@@ -19,4 +19,5 @@
     const urlParams = new URLSearchParams(window.location.search);
     const rating = urlParams.get('rating');
     document.querySelector('.ratingtxt').textContent = `You selected ${rating} out of 5`;
+
 </script>
