@@ -26,16 +26,18 @@
     </body>
 </html>
 <script>
-document.querySelectorAll('.rate').forEach(button => {
-  button.addEventListener('click', function() {
+    let selectedRating;
+    document.querySelectorAll('.rate').forEach(button => {
+    button.addEventListener('click', function() {
     selectedRating = this.value;
   });
 });
 
-document.querySelector('submit').addEventListener('click', function() {
-  window.location.href = `thankyou.html?rating=${selectedRating}`;
+    document.querySelector('submit').addEventListener('click', function() {
+    window.location.href = `thankyou.html?rating=${selectedRating}`;
 });
 </script>
+
 
 
 
